@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10px;
+    background: linear-gradient(90deg, #395492, #0099c0, #3dd5a8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-screen{
+    width: 50%;
+}
+.game-screen input{
+    width: 300;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding-left: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.game-screen button{
+    /* margin: auto; */
+    background-color: rgba(30, 78, 221, 0.885);
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    cursor: pointer;
+}
+.number-info, .number-range{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers Guessing</title>
+    <link rel="stylesheet" href="../src/assets/styles/style.css">
+</head>
+<body onload="startGame()">
+    <div class="container">
+        <div class="game-screen">
+            <div class="number-range">
+                <label>
+                    Мин. число:
+                    <input type="number" value="0" id="min-number">
+                </label>
+                <label>
+                    Макс. число:
+                    <input type="number" value="100" id="max-number">
+                </label>
+            </div>
+            <!-- <input id="number-range" type="range" min="10" max="1000" step="1" value="100"> -->
+            <div class="number-info">
+                <label>
+                    Угадайте число:
+                    <input type="number" id="input-number">
+                </label>
+                <label>
+                    Номер попытки:
+                    <input type="number" id="show-attempts" value="0" readonly>
+                </label>
+            </div>
+            <div class="buttons">
+                <button id="play-button">Играть !</button>
+                <button id="reload-button" onclick="reload()">Новая игра</button>
+            </div>
+        </div>
+    </div>
+    <script src="../src/js/app.js"></script>
+</body>
+</html>
